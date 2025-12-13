@@ -12,8 +12,13 @@ class videoListModulController extends ArticleView
 
     protected $detailHook = "video-detail";
 
+    protected Frontend $frontend;
+
+    protected AdminContent $adminContent;
+
 	
 	public function __construct(){
+		parent::__construct();
 		$this->settings = new Settings();
 		$this->vendor = new Vendor();
 		$this->frontend = new Frontend();
