@@ -32,6 +32,8 @@ class singlPageWidthModulController
         if ($rest->webhook(2)) { //o jeden vyssi webhook ako maximalnz mozny
             $rest->loadDefault();
         } else {
+            // Initialize $multiLanguage for template
+            $multiLanguage = new \DntLibrary\Base\MultyLanguage();
             include "tpl.php";
         }
     }
