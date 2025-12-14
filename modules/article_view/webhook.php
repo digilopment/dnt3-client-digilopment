@@ -11,7 +11,7 @@ class articleViewModulController
     public function run()
     {
         $article = new ArticleView;
-        $sdminContent = new AdminContent;
+        $adminContent = new AdminContent;
         $settings = new Settings;
         $rest = new Rest;
 
